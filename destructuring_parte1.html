@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+
+    <script>
+
+        //destructuring
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+        //let [a, b, , c] = frutas //pular um indice
+        let [a, b, c, d, e = 'Banana'] = frutas //utilziar valores default
+
+        //console.log(a, b, c, d, e)
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'],['José', 'Maria']]
+
+        let [[, , f3], [, n2]] = coisas //Recuperar arrays multidimensionais
+
+        console.log(f3, n2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

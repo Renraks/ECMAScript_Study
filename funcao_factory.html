@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Factory</title>
+    <script>
+
+        //Requisição http
+        //Resposta http
+        let Bicicleta1 = {
+            cor: 'Branca',
+            marcha: 'Única',
+            aro: 12,
+            pedalar(){console.log('Pedalando')}
+        }
+
+        let Bicicleta2 = {
+            cor: 'Vermelha',
+            marcha: '18',
+            aro: 26,
+            pedalar(){console.log('Pedalando')}
+        }
+        console.log(Bicicleta1)
+
+        let BicicletaFactory = function(cor, marcha, aro, tipoPedal) 
+        {
+            //lógica para montagem do objeto
+            //Requisição http
+            //Resposta http
+            return{
+                cor,
+                marcha,
+                aro,
+                tipoPedal,
+                pedalar(){console.log('Pedalando')}
+            }
+        }
+
+        let Bicicleta3 = BicicletaFactory('Vermelha', '18', 26, 'Grande')
+        let Bicicleta4 = BicicletaFactory('Preta', '21', 29, 'Grande')
+        let Bicicleta5 = BicicletaFactory('Roxo', '22', 30, 'Médio')
+        console.log(Bicicleta3)
+        console.log(Bicicleta4)
+        console.log(Bicicleta5)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
